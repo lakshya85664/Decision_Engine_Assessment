@@ -1,0 +1,16 @@
+{
+  "rejected": [
+    {
+      "name": "send",
+      "reason": "rejected because authorization was not granted"
+    },
+    {
+      "name": "review",
+      "reason": "lower utility (3) than selected utility (6)"
+    }
+  ],
+  "selected": "draft",
+  "selected_utility": 6,
+  "stage": "post_decision",
+  "status": "selected"
+}

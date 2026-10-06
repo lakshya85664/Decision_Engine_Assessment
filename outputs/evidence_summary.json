@@ -1,0 +1,25 @@
+{
+  "assessment": "Decision Making in Code",
+  "core_tasks": 5,
+  "evidence_files": [
+    "evidence/traces/authorized_selection_trace.json",
+    "evidence/traces/no_safe_option_trace.json",
+    "evidence/state_snapshots/authorized_selection_state.json",
+    "evidence/state_snapshots/no_safe_option_state.json"
+  ],
+  "scenarios": [
+    {
+      "name": "authorized_candidate_selection",
+      "selected": "draft",
+      "status": "selected",
+      "utility": 6
+    },
+    {
+      "action": "escalate",
+      "name": "no_safe_option_fallback",
+      "selected": null,
+      "status": "no_safe_option"
+    }
+  ],
+  "test_count": 31
+}

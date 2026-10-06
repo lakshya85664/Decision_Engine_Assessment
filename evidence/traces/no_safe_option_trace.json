@@ -1,0 +1,53 @@
+{
+  "authorization_filter": {
+    "permitted_candidates": [],
+    "rejected_candidates": [
+      "send",
+      "publish"
+    ],
+    "total_candidates": 2
+  },
+  "candidates": [
+    {
+      "allowed": false,
+      "authorization": "not_approved",
+      "benefit": 100,
+      "cost": 0,
+      "name": "send",
+      "required_evidence": [
+        "recipient_confirmation"
+      ],
+      "risk": 0
+    },
+    {
+      "allowed": false,
+      "authorization": "not_approved",
+      "benefit": 90,
+      "cost": 0,
+      "name": "publish",
+      "required_evidence": [
+        "publication_approval"
+      ],
+      "risk": 1
+    }
+  ],
+  "decision": {
+    "action": "escalate",
+    "explanation": "No permitted candidate is available. No action was selected. Escalation or additional authorization is required.",
+    "rejected": [
+      {
+        "name": "send",
+        "reason": "rejected because authorization was not granted"
+      },
+      {
+        "name": "publish",
+        "reason": "rejected because authorization was not granted"
+      }
+    ],
+    "selected": null,
+    "selected_utility": null,
+    "status": "no_safe_option"
+  },
+  "input": "examples\\no_safe_options.json",
+  "scenario": "no_safe_option_fallback"
+}

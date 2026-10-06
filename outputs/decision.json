@@ -1,0 +1,28 @@
+{
+  "action": null,
+  "explanation": "Selected 'draft' because it is the highest-ranked permitted candidate with utility 6. Ties are resolved by lower risk, lower cost, then alphabetical name order.",
+  "rejected": [
+    {
+      "name": "send",
+      "reason": "rejected because authorization was not granted"
+    },
+    {
+      "name": "review",
+      "reason": "lower utility (3) than selected utility (6)"
+    }
+  ],
+  "selected": {
+    "allowed": true,
+    "authorization": "approved",
+    "benefit": 8,
+    "cost": 1,
+    "name": "draft",
+    "required_evidence": [
+      "source_data",
+      "draft_template"
+    ],
+    "risk": 1
+  },
+  "selected_utility": 6,
+  "status": "selected"
+}

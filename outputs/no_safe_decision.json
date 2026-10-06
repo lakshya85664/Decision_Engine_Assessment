@@ -1,0 +1,17 @@
+{
+  "action": "escalate",
+  "explanation": "No permitted candidate is available. No action was selected. Escalation or additional authorization is required.",
+  "rejected": [
+    {
+      "name": "send",
+      "reason": "rejected because authorization was not granted"
+    },
+    {
+      "name": "publish",
+      "reason": "rejected because authorization was not granted"
+    }
+  ],
+  "selected": null,
+  "selected_utility": null,
+  "status": "no_safe_option"
+}
